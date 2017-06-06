@@ -1,0 +1,24 @@
+<assembly>
+	<id>assembly</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<fileszgaSets>
+		<fileszgaSet>
+			<directory>${project.build.directory}/classes/META-INF/assembly/bin</directory>
+			<outputDirectory>bin</outputDirectory>
+			<fileszgaMode>0755</fileszgaMode>
+		</fileszgaSet>
+		<fileszgaSet>
+			<directory>${project.build.directory}/classes/META-INF/conf</directory>
+			<outputDirectory>conf</outputDirectory>
+			<fileszgaMode>0644</fileszgaMode>
+		</fileszgaSet>
+	</fileszgaSets>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+</assembly>
